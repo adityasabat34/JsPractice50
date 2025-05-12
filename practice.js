@@ -39,3 +39,48 @@ function showMessage(arg) {
   // console.log(arg);
 }
 greet("Aditya", showMessage);
+
+//add a num
+function add(a, b) {
+  return a + b;
+}
+// console.log(add(2, 6));
+
+///////////////////////////////////////////////////////
+
+function isPalidrom(str) {
+  const normalizedStr = str.toLowerCase().replace(/[\W_]/g, "");
+  const reverseStr = normalizedStr.split("").reverse().join("");
+  return reverseStr === normalizedStr;
+}
+
+// console.log("SIgn", isPalidrom("Levl"));
+
+//////////////////////////////////////////////////////////
+
+function preet(arg, cb) {
+  const name = `hello ${arg}!`;
+  cb(name);
+}
+
+function showMessage(msg) {
+  // console.log(msg);
+}
+
+// preet("Aditya", showMessage);
+
+//////////////////////////////////////////////////////////////
+
+///////////// add a property to an obejct in JS//////////////////////////
+
+const person = { name: "Aditya" };
+person.age = 21;
+// console.log(person);
+
+//////////////////////// delete a property ////////////////////////////
+
+const people = { name: "Aditya", age: 22 };
+delete people.age;
+// console.log(people);
+
+///////////////////////////
