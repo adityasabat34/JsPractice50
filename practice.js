@@ -89,4 +89,17 @@ delete people.age;
 
 /////////////////////////////////////////////////////////////////////////
 
-console.log("sahil".repeat(3));
+// console.log("sahil".repeat(3));
+
+////////////////////////////////////////////////////////////////////////
+
+const arrr = [3, 4, 454, 45, 5];
+function sumArray(arr) {
+  let sum = 0;
+  for (num of arr) {
+    sum = sum + num;
+  }
+  return sum;
+}
+
+console.log(sumArray(arrr));
