@@ -120,3 +120,26 @@ function isPrimeOrNot(num) {
 
 console.log(isPrimeOrNot(3));
 console.log(isPrimeOrNot(10));
+
+///////////////////////////////////////////////////////////////////////////
+
+//Write a program to print the first n Fibonacci numbers
+
+function printFibonacci(n) {
+  let num1 = 0;
+  let num2 = 1;
+
+  const store = [];
+
+  for (let i = 0; i <= n; i++) {
+    store.push(num1);
+
+    const next = num1 + num2;
+
+    num1 = num2;
+    num2 = next;
+  }
+  return store;
+}
+
+console.log(printFibonacci(5));
