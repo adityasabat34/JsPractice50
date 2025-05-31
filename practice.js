@@ -118,8 +118,8 @@ function isPrimeOrNot(num) {
   return true;
 }
 
-console.log(isPrimeOrNot(3));
-console.log(isPrimeOrNot(10));
+// console.log(isPrimeOrNot(3));
+// console.log(isPrimeOrNot(10));
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -129,17 +129,33 @@ function printFibonacci(n) {
   let num1 = 0;
   let num2 = 1;
 
-  const store = [];
+  const store = []; // 0,1,1,2,3,5
 
   for (let i = 0; i <= n; i++) {
     store.push(num1);
 
-    const next = num1 + num2;
+    const next = num1 + num2; // 0+1, 1+1, 1+2, 2+3, 3+5,
 
-    num1 = num2;
-    num2 = next;
+    num1 = num2; //1, 1, 2, 3, 5,
+    num2 = next; //1, 2, 3, 5, 8,
   }
   return store;
 }
 
-console.log(printFibonacci(5));
+// console.log(printFibonacci(5));
+
+///////////////////////////////////////////////////////////////////////////
+
+//Write a program to find the factorial of a number
+
+function factorial(n) {
+  if (n < 0) return;
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
+  }
+  return result;
+}
+
+console.log(factorial(3));
+////////////////////////////////////////////////////////////////////
