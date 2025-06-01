@@ -180,3 +180,18 @@ function frequency(arr) {
 }
 
 // console.log(frequency([3, 3, 3, 55, 5, 5]));
+
+//write a funtion that count a repeat character in the string
+function charCount(str, char) {
+  let count = 0;
+  const str1 = str.toLowerCase();
+  for (let c of str1)
+    if (c === char) {
+      count++;
+    }
+  return count;
+}
+
+// console.log(charCount("Aditya", "a"));
+
+////////////////////////////////////////////////////////////////////////
