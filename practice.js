@@ -157,5 +157,26 @@ function factorial(n) {
   return result;
 }
 
-console.log(factorial(3));
+// console.log(factorial(3));
 ////////////////////////////////////////////////////////////////////
+
+// find power
+
+function power(base, repeat) {
+  return base ** repeat;
+}
+
+// console.log(power(3, 2));
+
+///////////////////////////////////////////////////////////////////////////
+
+function frequency(arr) {
+  const freqStore = {};
+
+  for (let eachItem of arr) {
+    freqStore[eachItem] = (freqStore[eachItem] || 0) + 1;
+  }
+  return freqStore;
+}
+
+// console.log(frequency([3, 3, 3, 55, 5, 5]));
